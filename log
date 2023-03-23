@@ -247,3 +247,9 @@ list.c:39:13: error: expected identifier before ‘==’ token
       |             ^~
 Compilation failed
 d07f9d4
+Thu 23 Mar 2023 04:23:58 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+51ce501
