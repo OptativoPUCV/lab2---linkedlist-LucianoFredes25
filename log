@@ -92,3 +92,17 @@ list.c:40:12: error: format ‘%d’ expects argument of type ‘int’, but arg
 cc1: all warnings being treated as errors
 Compilation failed
 28b7347
+Thu 23 Mar 2023 03:50:39 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘void *’ [-Werror=format=]
+   40 |   printf("%d", list->head->data);
+      |           ~^   ~~~~~~~~~~~~~~~~
+      |            |             |
+      |            int           void *
+      |           %p
+cc1: all warnings being treated as errors
+Compilation failed
+88852c3
