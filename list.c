@@ -36,8 +36,7 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  list->head->data = 0;
-  printf("%d", list->head->data);
+  
     return NULL;
 }
 

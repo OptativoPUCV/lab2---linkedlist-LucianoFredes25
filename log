@@ -106,3 +106,9 @@ list.c:40:12: error: format ‘%d’ expects argument of type ‘int’, but arg
 cc1: all warnings being treated as errors
 Compilation failed
 88852c3
+Thu 23 Mar 2023 03:50:53 PM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+af4545e
