@@ -36,7 +36,7 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-    printf("lol");
+    
 }
 
 void * nextList(List * list) {
