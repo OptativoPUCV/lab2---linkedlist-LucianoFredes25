@@ -43,7 +43,12 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
+  Node * n = list->current;
+  if(list == NULL || n == NULL || n->next == NULL)
     return NULL;
+  list->current = n->next;
+  n = list->current;
+  return n->data;
 }
 
 void * lastList(List * list) {
