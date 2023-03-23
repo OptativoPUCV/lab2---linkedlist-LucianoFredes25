@@ -79,3 +79,16 @@ Thu 23 Mar 2023 03:49:39 PM UTC:
  tests:  1|5
 total_score: 10/70
 f303bb6
+Thu 23 Mar 2023 03:50:09 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘Node *’ [-Werror=format=]
+   40 |   printf("%d", list->head);
+      |           ~^   ~~~~~~~~~~
+      |            |       |
+      |            int     Node *
+cc1: all warnings being treated as errors
+Compilation failed
+28b7347
