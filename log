@@ -765,3 +765,37 @@ list.c:120:7: error: ‘List’ {aka ‘struct List’} has no member named ‘n
       |       ^~
 Compilation failed
 d5fda26
+Sat 25 Mar 2023 05:36:16 PM UTC: 
+ list.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:117:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  117 |   if(list->current != list->head && list->current != list->tail)
+      |   ^~
+list.c:119:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  119 |     list->prev = Aux->prev;
+      |     ^~~~
+list.c:119:9: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+  119 |     list->prev = Aux->prev;
+      |         ^~
+list.c:120:9: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+  120 |     list->next = AuxNext->next;
+      |         ^~
+list.c: At top level:
+list.c:122:3: error: expected identifier or ‘(’ before ‘if’
+  122 |   if(list->current == list->tail){
+      |   ^~
+list.c:127:3: error: expected identifier or ‘(’ before ‘return’
+  127 |   return Aux->data;
+      |   ^~~~~~
+list.c:128:1: error: expected identifier or ‘(’ before ‘}’ token
+  128 | }
+      | ^
+list.c: In function ‘popCurrent’:
+list.c:121:3: error: control reaches end of non-void function [-Werror=return-type]
+  121 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+71509c1
