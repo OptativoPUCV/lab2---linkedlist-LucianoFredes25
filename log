@@ -845,3 +845,31 @@ list.c:122:3: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 b90f8fc
+Sat 25 Mar 2023 05:38:43 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:118:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  118 |   if(list->current != list->head && list->current != list->tail)
+      |   ^~
+list.c:120:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  120 |     list->current->prev = Aux->prev;
+      |     ^~~~
+list.c: At top level:
+list.c:123:3: error: expected identifier or ‘(’ before ‘if’
+  123 |   if(list->current == list->tail){
+      |   ^~
+list.c:128:3: error: expected identifier or ‘(’ before ‘return’
+  128 |   return Aux->data;
+      |   ^~~~~~
+list.c:129:1: error: expected identifier or ‘(’ before ‘}’ token
+  129 | }
+      | ^
+list.c: In function ‘popCurrent’:
+list.c:122:3: error: control reaches end of non-void function [-Werror=return-type]
+  122 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+5910e7a
