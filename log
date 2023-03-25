@@ -544,3 +544,9 @@ list.c:111:10: error: unused variable ‘AuxNext’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0c68f0f
+Sat 25 Mar 2023 04:04:09 PM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  11|1
+total_score: 55/70
+675919c
