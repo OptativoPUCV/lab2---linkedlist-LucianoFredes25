@@ -112,6 +112,7 @@ void * popCurrent(List * list) {
 
   list->current = AuxNext;
   list->prev = Aux->prev;
+  list->next = AuxNext->next;
   
   return Aux->data;  
 }
