@@ -752,3 +752,16 @@ list.c:115:7: error: ‘List’ {aka ‘struct List’} has no member named ‘n
       |       ^~
 Compilation failed
 d7325dd
+Sat 25 Mar 2023 05:32:47 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:119:7: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+  119 |   list->prev = Aux->prev;
+      |       ^~
+list.c:120:7: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+  120 |   list->next = AuxNext->next;
+      |       ^~
+Compilation failed
+d5fda26
