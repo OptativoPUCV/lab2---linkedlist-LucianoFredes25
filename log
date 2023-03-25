@@ -316,3 +316,21 @@ Sat 25 Mar 2023 03:20:23 PM UTC:
  tests:  10|2
 total_score: 45/70
 30f7df4
+Sat 25 Mar 2023 03:26:35 PM UTC: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:92:24: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   92 |   Node * AuxNext = list->next;
+      |                        ^~
+list.c:94:8: error: ‘Node’ has no member named ‘Prev’; did you mean ‘prev’?
+   94 |   Aux->Prev = AuxPrev;
+      |        ^~~~
+      |        prev
+list.c:95:8: error: ‘Node’ has no member named ‘Next’; did you mean ‘next’?
+   95 |   Aux->Next = AuxNext;
+      |        ^~~~
+      |        next
+Compilation failed
+3083eb8
