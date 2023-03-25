@@ -110,9 +110,10 @@ void * popCurrent(List * list) {
   Node * Aux = list->current;
   Node * AuxNext = list->current->next;
   if(list->current == list->head){
-    list->head = AuxNext;
+    list->current = AuxNext;
+    list->head = list->current;
     list->head->prev = NULL;
-    list->head->next = AuxNext->next;
+    list->head->next = list->current->next;
   }
   else{
     list->current = AuxNext;
