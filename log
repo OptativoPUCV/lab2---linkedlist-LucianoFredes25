@@ -408,3 +408,13 @@ Sat 25 Mar 2023 03:35:17 PM UTC:
  tests:  10|2
 total_score: 45/70
 1d6cecb
+Sat 25 Mar 2023 03:35:57 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:94:20: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   94 |   printf("%p", list->next->data);
+      |                    ^~
+Compilation failed
+8fd4b12
