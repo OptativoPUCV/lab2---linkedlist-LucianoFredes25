@@ -68,7 +68,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  Node * Aux = createnode(data);
+  Node * Aux = createNode(data);
 }
 
 void pushBack(List * list, void * data) {
