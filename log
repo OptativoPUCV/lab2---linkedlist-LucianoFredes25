@@ -729,3 +729,13 @@ Sat 25 Mar 2023 05:24:49 PM UTC:
  tests:  11|1
 total_score: 55/70
 03f1626
+Sat 25 Mar 2023 05:29:51 PM UTC: 
+ list.c | 12 +++---------
+ 1 file changed, 3 insertions(+), 9 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:114:7: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+  114 |   list->prev = Aux->prev;
+      |       ^~
+Compilation failed
+210634c
