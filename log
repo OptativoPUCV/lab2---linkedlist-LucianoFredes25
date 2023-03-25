@@ -493,3 +493,16 @@ Sat 25 Mar 2023 03:53:08 PM UTC:
  tests:  11|1
 total_score: 55/70
 88e5d36
+Sat 25 Mar 2023 03:54:16 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:112:22: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+  112 |     list->head = list->next;
+      |                      ^~
+list.c:113:9: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+  113 |     list->prev = NULL;
+      |         ^~
+Compilation failed
+dffe441
