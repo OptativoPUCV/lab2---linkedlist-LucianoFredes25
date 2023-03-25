@@ -533,3 +533,14 @@ list.c:115:33: error: ‘Node’ has no member named ‘Next’; did you mean �
       |                                 next
 Compilation failed
 5c9125b
+Sat 25 Mar 2023 04:01:04 PM UTC: 
+ list.c | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:111:10: error: unused variable ‘AuxNext’ [-Werror=unused-variable]
+  111 |   Node * AuxNext = list->current->next;
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0c68f0f
