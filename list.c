@@ -90,7 +90,7 @@ void pushCurrent(List * list, void * data) {
   Node * Aux = createNode(data);
   Node * AuxNext = list->next;
   list->next = Aux;
-  printf("%p", list->next->data);
+  printf("%d", list->next->data);
   Aux->next = AuxNext;
 }
 
