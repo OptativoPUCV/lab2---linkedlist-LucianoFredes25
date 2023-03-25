@@ -658,3 +658,14 @@ Sat 25 Mar 2023 04:19:06 PM UTC:
  tests:  11|1
 total_score: 55/70
 a8f25f9
+Sat 25 Mar 2023 05:17:34 PM UTC: 
+ list.c | 4 ----
+ 1 file changed, 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:111:10: error: unused variable ‘AuxNext’ [-Werror=unused-variable]
+  111 |   Node * AuxNext = list->current->next;
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+de5c923
