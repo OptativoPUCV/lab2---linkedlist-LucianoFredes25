@@ -344,3 +344,16 @@ list.c:92:24: error: ‘List’ {aka ‘struct List’} has no member named ‘n
       |                        ^~
 Compilation failed
 842f557
+Sat 25 Mar 2023 03:32:03 PM UTC: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:91:24: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   91 |   Node * AuxNext = list->next;
+      |                        ^~
+list.c:92:7: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   92 |   list->next = Aux;
+      |       ^~
+Compilation failed
+714f101
