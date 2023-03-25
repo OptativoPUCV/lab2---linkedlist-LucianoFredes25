@@ -91,8 +91,8 @@ void pushCurrent(List * list, void * data) {
   Node * AuxPrev = list->current;
   Node * AuxNext = list->next;
   list->current = Aux;
-  Aux->Prev = AuxPrev;
-  Aux->Next = AuxNext;
+  Aux->prev = AuxPrev;
+  Aux->next = AuxNext;
 }
 
 void * popFront(List * list) {
