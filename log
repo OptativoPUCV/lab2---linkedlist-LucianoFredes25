@@ -620,3 +620,9 @@ list.c:114:29: error: ‘Node’ has no member named ‘n’
       |                             ^~
 Compilation failed
 1264f7e
+Sat 25 Mar 2023 04:16:20 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+b1fe2d7
