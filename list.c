@@ -123,10 +123,7 @@ void * popCurrent(List * list) {
     }
 
     list->current = current->next;
-  }
 
-  
-  
   return Aux->data;  
 }
 
