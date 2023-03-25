@@ -107,7 +107,8 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+  Node * Aux = list->current;
+  return Aux->data;  
 }
 
 void cleanList(List * list) {
