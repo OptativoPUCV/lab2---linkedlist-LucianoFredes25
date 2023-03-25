@@ -610,3 +610,13 @@ Sat 25 Mar 2023 04:15:19 PM UTC:
  tests:  11|1
 total_score: 55/70
 3b67595
+Sat 25 Mar 2023 04:16:08 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:114:29: error: ‘Node’ has no member named ‘n’
+  114 |   list->head->next = AuxNext->n;
+      |                             ^~
+Compilation failed
+1264f7e
