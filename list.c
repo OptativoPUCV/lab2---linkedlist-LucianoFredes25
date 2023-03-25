@@ -87,11 +87,11 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
-  Node * Aux = createNode(data);
+  /*Node * Aux = createNode(data);
   Node * AuxNext = list->next;
   list->next = Aux;
+  Aux->next = AuxNext;*/
   printf("lol");
-  Aux->next = AuxNext;
 }
 
 void * popFront(List * list) {
