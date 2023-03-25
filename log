@@ -277,3 +277,19 @@ Sat 25 Mar 2023 03:12:14 PM UTC:
  tests:  9|3
 total_score: 35/70
 e439d26
+Sat 25 Mar 2023 03:15:07 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:71:16: error: implicit declaration of function ‘createnode’; did you mean ‘createNode’? [-Werror=implicit-function-declaration]
+   71 |   Node * Aux = createnode(data);
+      |                ^~~~~~~~~~
+      |                createNode
+list.c:71:16: error: initialization of ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+list.c:71:10: error: unused variable ‘Aux’ [-Werror=unused-variable]
+   71 |   Node * Aux = createnode(data);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d493b1e
